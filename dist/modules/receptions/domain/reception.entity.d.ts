@@ -1,0 +1,30 @@
+import 'reflect-metadata';
+import { Storage } from '@modules/storages/domain/storage.entity';
+import { Branch } from '@modules/branches/domain/branch.entity';
+import { Supplier } from '@modules/suppliers/domain/supplier.entity';
+import { User } from '@modules/users/domain/user.entity';
+export declare class Reception {
+    id: string;
+    type: string;
+    storageId?: string;
+    branchId?: string;
+    supplierId?: string;
+    userId?: string;
+    reference?: string;
+    documentNumber?: string;
+    notes?: string;
+    subtotal: number;
+    taxAmount: number;
+    discountAmount: number;
+    total: number;
+    lineCount: number;
+    transactionId?: string;
+    payments?: any;
+    createdAt: Date;
+    updatedAt: Date;
+    storage?: Storage;
+    branch?: Branch;
+    supplier?: Supplier;
+    user?: User;
+    lines?: any[];
+}

@@ -1,0 +1,31 @@
+import "reflect-metadata";
+import { Product } from '@modules/products/domain/product.entity';
+import { Unit } from '@modules/units/domain/unit.entity';
+import { PriceListItem } from '@modules/price-list-items/domain/price-list-item.entity';
+export declare class ProductVariant {
+    id: string;
+    productId?: string;
+    sku: string;
+    barcode?: string;
+    basePrice: number;
+    baseCost: number;
+    pmp: number;
+    unitId: string;
+    unit: Unit;
+    weight?: number;
+    weightUnit: string;
+    attributeValues?: Record<string, string>;
+    taxIds?: string[];
+    trackInventory: boolean;
+    allowNegativeStock: boolean;
+    minimumStock: number;
+    maximumStock: number;
+    reorderPoint: number;
+    imagePath?: string;
+    isActive: boolean;
+    createdAt: Date;
+    updatedAt: Date;
+    deletedAt?: Date;
+    product?: Product;
+    priceListItems?: PriceListItem[];
+}

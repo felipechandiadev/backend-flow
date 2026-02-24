@@ -1,0 +1,15 @@
+
+> flow-backend@0.0.1 build
+> nest build
+
+[96msrc/data/db.ts[0m:[93m5[0m:[93m33[0m - [91merror[0m[90m TS2307: [0mCannot find module '../entities' or its corresponding type declarations.
+
+[7m5[0m import * as entitiesModule from "../entities";
+[7m [0m [91m                                ~~~~~~~~~~~~~[0m
+[96msrc/shared/application/GoldPriceService.ts[0m:[93m1[0m:[93m23[0m - [91merror[0m[90m TS2307: [0mCannot find module '../data/db' or its corresponding type declarations.
+
+[7m1[0m import { getDb } from '../data/db';
+[7m [0m [91m                      ~~~~~~~~~~~~[0m
+
+Found 2 error(s).
+

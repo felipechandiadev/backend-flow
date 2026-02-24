@@ -1,0 +1,6 @@
+export declare enum UnitDimension {
+    MASS = "mass",
+    LENGTH = "length",
+    VOLUME = "volume",
+    COUNT = "count"
+}

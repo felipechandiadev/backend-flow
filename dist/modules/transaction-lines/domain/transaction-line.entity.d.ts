@@ -1,0 +1,37 @@
+import "reflect-metadata";
+import { Transaction } from '@modules/transactions/domain/transaction.entity';
+import { Product } from '@modules/products/domain/product.entity';
+import { ProductVariant } from '@modules/product-variants/domain/product-variant.entity';
+import { Tax } from '@modules/taxes/domain/tax.entity';
+import { Unit } from '@modules/units/domain/unit.entity';
+export declare class TransactionLine {
+    id: string;
+    transactionId?: string;
+    productId?: string;
+    productVariantId?: string;
+    unitId?: string;
+    taxId?: string;
+    lineNumber: number;
+    productName: string;
+    productSku?: string;
+    variantName?: string;
+    quantity: number;
+    quantityInBase?: number | null;
+    unitOfMeasure?: string;
+    unitConversionFactor?: number | null;
+    unitPrice: number;
+    unitCost?: number;
+    discountPercentage: number;
+    discountAmount: number;
+    taxRate: number;
+    taxAmount: number;
+    subtotal: number;
+    total: number;
+    notes?: string;
+    createdAt: Date;
+    transaction?: Transaction;
+    product?: Product;
+    productVariant?: ProductVariant;
+    unit?: Unit;
+    tax?: Tax;
+}
