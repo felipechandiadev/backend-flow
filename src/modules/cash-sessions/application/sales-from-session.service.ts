@@ -238,7 +238,7 @@ export class SalesFromSessionService {
           notes: line.notes || undefined,
         });
       }
-
+              taxRate: Math.max(0, Math.min(999.99, normalizedTaxRate)),
       const total = subtotal - discountAmount + taxAmount;
 
       // ✅ DELEGAR: Usar TransactionsService.createTransaction() para generar asientos
