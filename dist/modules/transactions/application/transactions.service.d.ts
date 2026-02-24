@@ -1,11 +1,11 @@
 import { EventEmitter2 } from '@nestjs/event-emitter';
 import { Repository, DataSource } from 'typeorm';
-import { PaymentMethod, Transaction, TransactionType } from '@modules/transactions/domain/transaction.entity';
-import { Branch } from '@modules/branches/domain/branch.entity';
+import { PaymentMethod, Transaction, TransactionType } from '../../transactions/domain/transaction.entity';
+import { Branch } from '../../branches/domain/branch.entity';
 import { SearchTransactionsDto } from './dto/search-transactions.dto';
 import { CreateTransactionDto } from './dto/create-transaction.dto';
-import { LedgerEntriesService } from '@modules/ledger-entries/application/ledger-entries.service';
-import { AccountingPeriodsService } from '@modules/accounting-periods/application/accounting-periods.service';
+import { LedgerEntriesService } from '../../ledger-entries/application/ledger-entries.service';
+import { AccountingPeriodsService } from '../../accounting-periods/application/accounting-periods.service';
 export declare class TransactionsService {
     private readonly transactionsRepository;
     private readonly branchRepository;

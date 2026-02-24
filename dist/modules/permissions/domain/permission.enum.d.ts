@@ -1,4 +1,4 @@
-import { User } from '@modules/users/domain/user.entity';
+import { User } from '../../users/domain/user.entity';
 export declare enum Ability {
     DASHBOARD_MENU = "DASHBOARD_MENU",
     RECEPTIONS_MENU = "RECEPTIONS_MENU",

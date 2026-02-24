@@ -1,11 +1,11 @@
 import "reflect-metadata";
-import { Company } from '@modules/companies/domain/company.entity';
-import { Branch } from '@modules/branches/domain/branch.entity';
-import { ResultCenter } from '@modules/result-centers/domain/result-center.entity';
-import { ExpenseCategory } from '@modules/expense-categories/domain/expense-category.entity';
-import { Supplier } from '@modules/suppliers/domain/supplier.entity';
-import { Employee } from '@modules/employees/domain/employee.entity';
-import { User } from '@modules/users/domain/user.entity';
+import { Company } from '../../companies/domain/company.entity';
+import { Branch } from '../../branches/domain/branch.entity';
+import { ResultCenter } from '../../result-centers/domain/result-center.entity';
+import { ExpenseCategory } from '../../expense-categories/domain/expense-category.entity';
+import { Supplier } from '../../suppliers/domain/supplier.entity';
+import { Employee } from '../../employees/domain/employee.entity';
+import { User } from '../../users/domain/user.entity';
 export declare enum OperationalExpenseStatus {
     DRAFT = "DRAFT",
     PENDING_APPROVAL = "PENDING_APPROVAL",

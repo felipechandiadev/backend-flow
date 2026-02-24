@@ -1,5 +1,5 @@
 import "reflect-metadata";
-import { ResultCenter } from '@modules/result-centers/domain/result-center.entity';
+import { ResultCenter } from '../../result-centers/domain/result-center.entity';
 export declare class Category {
     id: string;
     parentId?: string;

@@ -1,8 +1,8 @@
 import 'reflect-metadata';
-import { Storage } from '@modules/storages/domain/storage.entity';
-import { Branch } from '@modules/branches/domain/branch.entity';
-import { Supplier } from '@modules/suppliers/domain/supplier.entity';
-import { User } from '@modules/users/domain/user.entity';
+import { Storage } from '../../storages/domain/storage.entity';
+import { Branch } from '../../branches/domain/branch.entity';
+import { Supplier } from '../../suppliers/domain/supplier.entity';
+import { User } from '../../users/domain/user.entity';
 export declare class Reception {
     id: string;
     type: string;

@@ -1,9 +1,9 @@
 import "reflect-metadata";
-import { Transaction } from '@modules/transactions/domain/transaction.entity';
-import { Product } from '@modules/products/domain/product.entity';
-import { ProductVariant } from '@modules/product-variants/domain/product-variant.entity';
-import { Tax } from '@modules/taxes/domain/tax.entity';
-import { Unit } from '@modules/units/domain/unit.entity';
+import { Transaction } from '../../transactions/domain/transaction.entity';
+import { Product } from '../../products/domain/product.entity';
+import { ProductVariant } from '../../product-variants/domain/product-variant.entity';
+import { Tax } from '../../taxes/domain/tax.entity';
+import { Unit } from '../../units/domain/unit.entity';
 export declare class TransactionLine {
     id: string;
     transactionId?: string;

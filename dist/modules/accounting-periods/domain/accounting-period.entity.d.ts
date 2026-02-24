@@ -1,6 +1,6 @@
 import "reflect-metadata";
-import { Company } from '@modules/companies/domain/company.entity';
-import { User } from '@modules/users/domain/user.entity';
+import { Company } from '../../companies/domain/company.entity';
+import { User } from '../../users/domain/user.entity';
 export declare enum AccountingPeriodStatus {
     OPEN = "OPEN",
     CLOSED = "CLOSED",

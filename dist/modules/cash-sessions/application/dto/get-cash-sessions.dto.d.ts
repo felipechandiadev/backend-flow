@@ -1,4 +1,4 @@
-import { CashSessionStatus } from '@modules/cash-sessions/domain/cash-session.entity';
+import { CashSessionStatus } from '../../../cash-sessions/domain/cash-session.entity';
 export declare class GetCashSessionsDto {
     pointOfSaleId?: string;
     status?: CashSessionStatus;

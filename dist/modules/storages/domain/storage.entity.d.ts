@@ -1,5 +1,5 @@
 import "reflect-metadata";
-import { Branch } from '@modules/branches/domain/branch.entity';
+import { Branch } from '../../branches/domain/branch.entity';
 export declare enum StorageType {
     WAREHOUSE = "WAREHOUSE",
     STORE = "STORE",

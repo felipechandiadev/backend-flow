@@ -1,4 +1,4 @@
-import { PaymentMethod, TransactionStatus, TransactionType } from '@modules/transactions/domain/transaction.entity';
+import { PaymentMethod, TransactionStatus, TransactionType } from '../../../transactions/domain/transaction.entity';
 export declare class SearchTransactionsDto {
     page?: number;
     limit?: number;

@@ -1,5 +1,5 @@
 import "reflect-metadata";
-import { PersonBankAccount } from '@modules/persons/domain/person.entity';
+import { PersonBankAccount } from '../../persons/domain/person.entity';
 export type CompanyBankAccount = PersonBankAccount;
 export declare class Company {
     id: string;

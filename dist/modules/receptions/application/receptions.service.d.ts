@@ -1,12 +1,12 @@
 import { Repository } from 'typeorm';
 import { Reception } from '../domain/reception.entity';
 import { ReceptionLine } from '../domain/reception-line.entity';
-import { Storage } from '@modules/storages/domain/storage.entity';
-import { Branch } from '@modules/branches/domain/branch.entity';
-import { Company } from '@modules/companies/domain/company.entity';
-import { User } from '@modules/users/domain/user.entity';
-import { ProductVariantsService } from '@modules/product-variants/application/product-variants.service';
-import { TransactionsService } from '@modules/transactions/application/transactions.service';
+import { Storage } from '../../storages/domain/storage.entity';
+import { Branch } from '../../branches/domain/branch.entity';
+import { Company } from '../../companies/domain/company.entity';
+import { User } from '../../users/domain/user.entity';
+import { ProductVariantsService } from '../../product-variants/application/product-variants.service';
+import { TransactionsService } from '../../transactions/application/transactions.service';
 export declare class ReceptionsService {
     private readonly receptionRepo;
     private readonly receptionLineRepo;

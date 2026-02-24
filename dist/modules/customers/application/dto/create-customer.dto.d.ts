@@ -1,4 +1,4 @@
-import { PersonType, DocumentType } from '@modules/persons/domain/person.entity';
+import { PersonType, DocumentType } from '../../../persons/domain/person.entity';
 export declare class CreateCustomerDto {
     personType: PersonType;
     firstName: string;

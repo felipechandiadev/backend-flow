@@ -1,5 +1,5 @@
 import "reflect-metadata";
-import { Transaction } from '@modules/transactions/domain/transaction.entity';
+import { Transaction } from '../../transactions/domain/transaction.entity';
 export declare enum InstallmentStatus {
     PENDING = "PENDING",
     PARTIAL = "PARTIAL",

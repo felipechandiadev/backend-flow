@@ -1,11 +1,11 @@
 import { Repository, DataSource } from 'typeorm';
-import { TreasuryAccount } from '@modules/treasury-accounts/domain/treasury-account.entity';
-import { CashSession, CashSessionStatus } from '@modules/cash-sessions/domain/cash-session.entity';
-import { PointOfSale } from '@modules/points-of-sale/domain/point-of-sale.entity';
-import { User } from '@modules/users/domain/user.entity';
-import { Transaction, TransactionType, TransactionStatus, PaymentMethod } from '@modules/transactions/domain/transaction.entity';
-import { TransactionLine } from '@modules/transaction-lines/domain/transaction-line.entity';
-import { ProductVariant } from '@modules/product-variants/domain/product-variant.entity';
+import { TreasuryAccount } from '../../treasury-accounts/domain/treasury-account.entity';
+import { CashSession, CashSessionStatus } from '../../cash-sessions/domain/cash-session.entity';
+import { PointOfSale } from '../../points-of-sale/domain/point-of-sale.entity';
+import { User } from '../../users/domain/user.entity';
+import { Transaction, TransactionType, TransactionStatus, PaymentMethod } from '../../transactions/domain/transaction.entity';
+import { TransactionLine } from '../../transaction-lines/domain/transaction-line.entity';
+import { ProductVariant } from '../../product-variants/domain/product-variant.entity';
 import { GetCashSessionsDto } from './dto/get-cash-sessions.dto';
 import { OpenCashSessionDto } from './dto/open-cash-session.dto';
 import { CreateSaleDto } from './dto/create-sale.dto';
@@ -54,7 +54,7 @@ export declare class CashSessionsService {
             openedAt: Date;
             closedAt?: Date;
             notes?: string;
-            closingDetails?: import("@modules/cash-sessions/domain/cash-session.entity").CashSessionClosingDetails | null;
+            closingDetails?: import("../../cash-sessions/domain/cash-session.entity").CashSessionClosingDetails | null;
             createdAt: Date;
             updatedAt: Date;
             deletedAt?: Date;
@@ -78,7 +78,7 @@ export declare class CashSessionsService {
             closedAt: Date | null;
             difference: number | null;
             notes: string | null;
-            closingDetails: import("@modules/cash-sessions/domain/cash-session.entity").CashSessionClosingDetails | null;
+            closingDetails: import("../../cash-sessions/domain/cash-session.entity").CashSessionClosingDetails | null;
             openedBy: {
                 id: string;
                 userName: string;
@@ -150,7 +150,7 @@ export declare class CashSessionsService {
             openedAt: Date;
             closedAt?: Date;
             notes?: string;
-            closingDetails?: import("@modules/cash-sessions/domain/cash-session.entity").CashSessionClosingDetails | null;
+            closingDetails?: import("../../cash-sessions/domain/cash-session.entity").CashSessionClosingDetails | null;
             createdAt: Date;
             updatedAt: Date;
             deletedAt?: Date;
@@ -196,7 +196,7 @@ export declare class CashSessionsService {
             closedAt: Date | null;
             difference: number | null;
             notes: string | null;
-            closingDetails: import("@modules/cash-sessions/domain/cash-session.entity").CashSessionClosingDetails | null;
+            closingDetails: import("../../cash-sessions/domain/cash-session.entity").CashSessionClosingDetails | null;
             openedBy: {
                 id: string;
                 userName: string;
@@ -248,7 +248,7 @@ export declare class CashSessionsService {
             difference: number;
             closedAt: Date;
             notes: string | null;
-            closingDetails: import("@modules/cash-sessions/domain/cash-session.entity").CashSessionClosingDetails;
+            closingDetails: import("../../cash-sessions/domain/cash-session.entity").CashSessionClosingDetails;
         };
         closing: {
             actual: {

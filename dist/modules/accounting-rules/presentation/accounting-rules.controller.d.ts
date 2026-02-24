@@ -1,4 +1,4 @@
-import { AccountingRulesService, CreateAccountingRuleDto, UpdateAccountingRuleDto } from '@modules/accounting-rules/application/accounting-rules.service';
+import { AccountingRulesService, CreateAccountingRuleDto, UpdateAccountingRuleDto } from '../../accounting-rules/application/accounting-rules.service';
 export declare class AccountingRulesController {
     private service;
     constructor(service: AccountingRulesService);

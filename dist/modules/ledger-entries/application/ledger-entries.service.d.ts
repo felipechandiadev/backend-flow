@@ -1,12 +1,12 @@
 import { EntityManager, Repository } from 'typeorm';
-import { LedgerEntry } from '@modules/ledger-entries/domain/ledger-entry.entity';
-import { Transaction } from '@modules/transactions/domain/transaction.entity';
-import { AccountingRule } from '@modules/accounting-rules/domain/accounting-rule.entity';
-import { AccountingAccount } from '@modules/accounting-accounts/domain/accounting-account.entity';
-import { Customer } from '@modules/customers/domain/customer.entity';
-import { Supplier } from '@modules/suppliers/domain/supplier.entity';
-import { Shareholder } from '@modules/shareholders/domain/shareholder.entity';
-import { Employee } from '@modules/employees/domain/employee.entity';
+import { LedgerEntry } from '../../ledger-entries/domain/ledger-entry.entity';
+import { Transaction } from '../../transactions/domain/transaction.entity';
+import { AccountingRule } from '../../accounting-rules/domain/accounting-rule.entity';
+import { AccountingAccount } from '../../accounting-accounts/domain/accounting-account.entity';
+import { Customer } from '../../customers/domain/customer.entity';
+import { Supplier } from '../../suppliers/domain/supplier.entity';
+import { Shareholder } from '../../shareholders/domain/shareholder.entity';
+import { Employee } from '../../employees/domain/employee.entity';
 interface ValidationError {
     code: string;
     message: string;

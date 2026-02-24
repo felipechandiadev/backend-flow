@@ -1,7 +1,7 @@
 import "reflect-metadata";
-import { Company } from '@modules/companies/domain/company.entity';
-import { Branch } from '@modules/branches/domain/branch.entity';
-import { ResultCenter } from '@modules/result-centers/domain/result-center.entity';
+import { Company } from '../../companies/domain/company.entity';
+import { Branch } from '../../branches/domain/branch.entity';
+import { ResultCenter } from '../../result-centers/domain/result-center.entity';
 export declare enum OrganizationalUnitType {
     HEADQUARTERS = "HEADQUARTERS",
     STORE = "STORE",

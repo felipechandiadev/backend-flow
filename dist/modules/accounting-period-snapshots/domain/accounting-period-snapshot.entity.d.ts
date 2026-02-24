@@ -1,6 +1,6 @@
 import "reflect-metadata";
-import { AccountingPeriod } from '@modules/accounting-periods/domain/accounting-period.entity';
-import { AccountingAccount } from '@modules/accounting-accounts/domain/accounting-account.entity';
+import { AccountingPeriod } from '../../accounting-periods/domain/accounting-period.entity';
+import { AccountingAccount } from '../../accounting-accounts/domain/accounting-account.entity';
 export declare class AccountingPeriodSnapshot {
     id: string;
     periodId: string;

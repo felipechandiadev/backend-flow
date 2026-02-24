@@ -1,7 +1,7 @@
 import { Repository } from 'typeorm';
 import { AccountingPeriod, AccountingPeriodStatus } from '../domain/accounting-period.entity';
-import { Company } from '@modules/companies/domain/company.entity';
-import { AccountBalanceService } from '@modules/account-balances/application/account-balance.service';
+import { Company } from '../../companies/domain/company.entity';
+import { AccountBalanceService } from '../../account-balances/application/account-balance.service';
 export declare class AccountingPeriodsService {
     private readonly accountingPeriodRepository;
     private readonly companyRepository;

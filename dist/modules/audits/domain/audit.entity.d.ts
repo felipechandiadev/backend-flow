@@ -1,5 +1,5 @@
-import { User } from '@modules/users/domain/user.entity';
-import { AuditActionType } from '@modules/audits/domain/audit.types';
+import { User } from '../../users/domain/user.entity';
+import { AuditActionType } from '../../audits/domain/audit.types';
 export declare class Audit {
     id: string;
     entityName: string;

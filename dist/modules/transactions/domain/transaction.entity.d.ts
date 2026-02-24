@@ -1,16 +1,16 @@
 import "reflect-metadata";
-import { Branch } from '@modules/branches/domain/branch.entity';
-import { PointOfSale } from '@modules/points-of-sale/domain/point-of-sale.entity';
-import { CashSession } from '@modules/cash-sessions/domain/cash-session.entity';
-import { Customer } from '@modules/customers/domain/customer.entity';
-import { Supplier } from '@modules/suppliers/domain/supplier.entity';
-import { User } from '@modules/users/domain/user.entity';
-import { ExpenseCategory } from '@modules/expense-categories/domain/expense-category.entity';
-import { ResultCenter } from '@modules/result-centers/domain/result-center.entity';
-import { Shareholder } from '@modules/shareholders/domain/shareholder.entity';
-import { AccountingPeriod } from '@modules/accounting-periods/domain/accounting-period.entity';
-import { Employee } from '@modules/employees/domain/employee.entity';
-import type { TransactionLine } from '@modules/transaction-lines/domain/transaction-line.entity';
+import { Branch } from '../../branches/domain/branch.entity';
+import { PointOfSale } from '../../points-of-sale/domain/point-of-sale.entity';
+import { CashSession } from '../../cash-sessions/domain/cash-session.entity';
+import { Customer } from '../../customers/domain/customer.entity';
+import { Supplier } from '../../suppliers/domain/supplier.entity';
+import { User } from '../../users/domain/user.entity';
+import { ExpenseCategory } from '../../expense-categories/domain/expense-category.entity';
+import { ResultCenter } from '../../result-centers/domain/result-center.entity';
+import { Shareholder } from '../../shareholders/domain/shareholder.entity';
+import { AccountingPeriod } from '../../accounting-periods/domain/accounting-period.entity';
+import { Employee } from '../../employees/domain/employee.entity';
+import type { TransactionLine } from '../../transaction-lines/domain/transaction-line.entity';
 export declare enum TransactionType {
     SALE = "SALE",
     SALE_RETURN = "SALE_RETURN",

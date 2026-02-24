@@ -1,7 +1,7 @@
 import 'reflect-metadata';
 import { Reception } from './reception.entity';
-import { Product } from '@modules/products/domain/product.entity';
-import { ProductVariant } from '@modules/product-variants/domain/product-variant.entity';
+import { Product } from '../../products/domain/product.entity';
+import { ProductVariant } from '../../product-variants/domain/product-variant.entity';
 export declare class ReceptionLine {
     id: string;
     receptionId: string;

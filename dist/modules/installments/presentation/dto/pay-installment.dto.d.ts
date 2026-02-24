@@ -1,4 +1,4 @@
-import { PaymentMethod } from '@modules/transactions/domain/transaction.entity';
+import { PaymentMethod } from '../../../transactions/domain/transaction.entity';
 export declare class PayInstallmentDto {
     paymentMethod: PaymentMethod;
     companyAccountKey?: string;

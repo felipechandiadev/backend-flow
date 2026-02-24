@@ -1,9 +1,9 @@
 import "reflect-metadata";
-import { Company } from '@modules/companies/domain/company.entity';
-import { AccountingAccount } from '@modules/accounting-accounts/domain/accounting-account.entity';
-import { ExpenseCategory } from '@modules/expense-categories/domain/expense-category.entity';
-import { Tax } from '@modules/taxes/domain/tax.entity';
-import { TransactionType, PaymentMethod } from '@modules/transactions/domain/transaction.entity';
+import { Company } from '../../companies/domain/company.entity';
+import { AccountingAccount } from '../../accounting-accounts/domain/accounting-account.entity';
+import { ExpenseCategory } from '../../expense-categories/domain/expense-category.entity';
+import { Tax } from '../../taxes/domain/tax.entity';
+import { TransactionType, PaymentMethod } from '../../transactions/domain/transaction.entity';
 export declare enum RuleScope {
     TRANSACTION = "TRANSACTION",
     TRANSACTION_LINE = "TRANSACTION_LINE"

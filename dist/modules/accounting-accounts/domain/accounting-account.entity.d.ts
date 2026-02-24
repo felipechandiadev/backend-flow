@@ -1,5 +1,5 @@
 import "reflect-metadata";
-import { Company } from '@modules/companies/domain/company.entity';
+import { Company } from '../../companies/domain/company.entity';
 export declare enum AccountType {
     ASSET = "ASSET",
     LIABILITY = "LIABILITY",

@@ -1,6 +1,6 @@
 import { Repository } from 'typeorm';
 import { Category } from '../domain/category.entity';
-import { Product } from '@modules/products/domain/product.entity';
+import { Product } from '../../products/domain/product.entity';
 import { CategoryWithCountsDto } from './dto/category-with-counts.dto';
 export declare class CategoryService {
     private readonly categoryRepository;

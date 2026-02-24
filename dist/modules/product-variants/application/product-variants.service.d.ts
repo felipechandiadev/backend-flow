@@ -1,6 +1,6 @@
 import { Repository } from 'typeorm';
-import { ProductVariant } from '@modules/product-variants/domain/product-variant.entity';
-import { PriceListItem } from '@modules/price-list-items/domain/price-list-item.entity';
+import { ProductVariant } from '../../product-variants/domain/product-variant.entity';
+import { PriceListItem } from '../../price-list-items/domain/price-list-item.entity';
 export declare class ProductVariantsService {
     private readonly variantRepository;
     private readonly priceListItemRepository;

@@ -1,4 +1,4 @@
-import { LedgerEntriesService, LedgerEntryGeneratorResponse } from '@modules/ledger-entries/application/ledger-entries.service';
+import { LedgerEntriesService, LedgerEntryGeneratorResponse } from '../../ledger-entries/application/ledger-entries.service';
 export declare class LedgerEntriesController {
     private ledgerService;
     constructor(ledgerService: LedgerEntriesService);

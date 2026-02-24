@@ -1,11 +1,11 @@
 import { Repository, DataSource } from 'typeorm';
-import { Transaction } from '@modules/transactions/domain/transaction.entity';
-import { CashSession } from '@modules/cash-sessions/domain/cash-session.entity';
-import { Branch } from '@modules/branches/domain/branch.entity';
-import { TransactionsService } from '@modules/transactions/application/transactions.service';
-import { LedgerEntriesService } from '@modules/ledger-entries/application/ledger-entries.service';
+import { Transaction } from '../../transactions/domain/transaction.entity';
+import { CashSession } from '../../cash-sessions/domain/cash-session.entity';
+import { Branch } from '../../branches/domain/branch.entity';
+import { TransactionsService } from '../../transactions/application/transactions.service';
+import { LedgerEntriesService } from '../../ledger-entries/application/ledger-entries.service';
 import { CreateMultiplePaymentsDto } from './dto/create-multiple-payments.dto';
-import { InstallmentService } from '@modules/installments/application/services/installment.service';
+import { InstallmentService } from '../../installments/application/services/installment.service';
 export declare class PaymentsService {
     private readonly transactionRepository;
     private readonly cashSessionRepository;

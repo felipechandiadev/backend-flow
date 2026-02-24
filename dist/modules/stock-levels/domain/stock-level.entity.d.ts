@@ -1,7 +1,7 @@
 import "reflect-metadata";
-import { ProductVariant } from '@modules/product-variants/domain/product-variant.entity';
-import { Storage } from '@modules/storages/domain/storage.entity';
-import { Transaction } from '@modules/transactions/domain/transaction.entity';
+import { ProductVariant } from '../../product-variants/domain/product-variant.entity';
+import { Storage } from '../../storages/domain/storage.entity';
+import { Transaction } from '../../transactions/domain/transaction.entity';
 export declare class StockLevel {
     id: string;
     productVariantId: string;

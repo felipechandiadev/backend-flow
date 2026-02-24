@@ -1,7 +1,7 @@
 import "reflect-metadata";
-import { Company } from '@modules/companies/domain/company.entity';
-import { AccountingAccount } from '@modules/accounting-accounts/domain/accounting-account.entity';
-import { AccountingPeriod } from '@modules/accounting-periods/domain/accounting-period.entity';
+import { Company } from '../../companies/domain/company.entity';
+import { AccountingAccount } from '../../accounting-accounts/domain/accounting-account.entity';
+import { AccountingPeriod } from '../../accounting-periods/domain/accounting-period.entity';
 export declare class AccountBalance {
     id: string;
     companyId: string;

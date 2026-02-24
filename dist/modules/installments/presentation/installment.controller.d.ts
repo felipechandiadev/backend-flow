@@ -1,7 +1,7 @@
-import { InstallmentService } from '@modules/installments/application/services/installment.service';
-import { CreateInstallmentDto } from '@modules/installments/presentation/dto/create-installment.dto';
-import { TransactionCarteraSummaryDto } from '@modules/installments/presentation/dto/installment.dto';
-import { PayInstallmentDto } from '@modules/installments/presentation/dto/pay-installment.dto';
+import { InstallmentService } from '../../installments/application/services/installment.service';
+import { CreateInstallmentDto } from '../../installments/presentation/dto/create-installment.dto';
+import { TransactionCarteraSummaryDto } from '../../installments/presentation/dto/installment.dto';
+import { PayInstallmentDto } from '../../installments/presentation/dto/pay-installment.dto';
 export declare class InstallmentController {
     private readonly installmentService;
     constructor(installmentService: InstallmentService);

@@ -1,6 +1,6 @@
 import { DataSource } from 'typeorm';
-import { Audit } from '@modules/audits/domain/audit.entity';
-import { AuditActionType } from '@modules/audits/domain/audit.types';
+import { Audit } from '../../modules/audits/domain/audit.entity';
+import { AuditActionType } from '../../modules/audits/domain/audit.types';
 export interface AuditLogPayload {
     entityName: string;
     entityId: string;

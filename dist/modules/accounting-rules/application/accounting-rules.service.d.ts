@@ -1,5 +1,5 @@
 import { Repository } from 'typeorm';
-import { AccountingRule } from '@modules/accounting-rules/domain/accounting-rule.entity';
+import { AccountingRule } from '../../accounting-rules/domain/accounting-rule.entity';
 export interface CreateAccountingRuleDto {
     companyId: string;
     appliesTo: 'TRANSACTION' | 'TRANSACTION_LINE';

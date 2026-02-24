@@ -2,7 +2,7 @@ import { CustomersService } from '../application/customers.service';
 import { CreateCustomerDto } from '../application/dto/create-customer.dto';
 import { UpdateCustomerDto } from '../application/dto/update-customer.dto';
 import { SearchCustomersDto } from '../application/dto/search-customers.dto';
-import { InstallmentService } from '@modules/installments/application/services/installment.service';
+import { InstallmentService } from '../../installments/application/services/installment.service';
 export declare class CustomersController {
     private readonly customersService;
     private readonly installmentService;
@@ -22,7 +22,7 @@ export declare class CustomersController {
             creditLimit: number;
             currentBalance: number;
             availableCredit: number;
-            paymentDayOfMonth: 10 | 5 | 15 | 20 | 25 | 30;
+            paymentDayOfMonth: 10 | 20 | 15 | 5 | 25 | 30;
             isActive: boolean;
             createdAt: Date;
             updatedAt: Date;
@@ -43,7 +43,7 @@ export declare class CustomersController {
             creditLimit: number;
             currentBalance: number;
             availableCredit: number;
-            paymentDayOfMonth: 10 | 5 | 15 | 20 | 25 | 30;
+            paymentDayOfMonth: 10 | 20 | 15 | 5 | 25 | 30;
             isActive: boolean;
             createdAt: Date;
             updatedAt: Date;
@@ -63,7 +63,7 @@ export declare class CustomersController {
             creditLimit: number;
             usedCredit: number;
             availableCredit: number;
-            paymentDayOfMonth: 10 | 5 | 15 | 20 | 25 | 30;
+            paymentDayOfMonth: 10 | 20 | 15 | 5 | 25 | 30;
             createdAt: Date;
             updatedAt: Date;
         };
@@ -77,7 +77,7 @@ export declare class CustomersController {
         customer: {
             customerId: string;
             creditLimit: number;
-            paymentDayOfMonth: 10 | 5 | 15 | 20 | 25 | 30;
+            paymentDayOfMonth: 10 | 20 | 15 | 5 | 25 | 30;
             notes: string | undefined;
             isActive: boolean;
             updatedAt: Date;
@@ -160,7 +160,7 @@ export declare class CustomersController {
             creditLimit: number;
             usedCredit: number;
             availableCredit: number;
-            paymentDayOfMonth: 10 | 5 | 15 | 20 | 25 | 30;
+            paymentDayOfMonth: 10 | 20 | 15 | 5 | 25 | 30;
             isActive: boolean;
             notes: string | null;
             createdAt: Date;

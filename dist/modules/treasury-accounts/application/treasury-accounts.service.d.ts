@@ -1,6 +1,6 @@
 import { Repository } from 'typeorm';
-import { TreasuryAccount } from '@modules/treasury-accounts/domain/treasury-account.entity';
-import { Company } from '@modules/companies/domain/company.entity';
+import { TreasuryAccount } from '../../treasury-accounts/domain/treasury-account.entity';
+import { Company } from '../../companies/domain/company.entity';
 export declare class TreasuryAccountsService {
     private readonly treasuryAccountRepository;
     private readonly companyRepository;

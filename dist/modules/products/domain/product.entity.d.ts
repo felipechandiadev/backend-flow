@@ -1,7 +1,7 @@
 import "reflect-metadata";
-import { Category } from '@modules/categories/domain/category.entity';
-import { Unit } from '@modules/units/domain/unit.entity';
-import { ResultCenter } from '@modules/result-centers/domain/result-center.entity';
+import { Category } from '../../categories/domain/category.entity';
+import { Unit } from '../../units/domain/unit.entity';
+import { ResultCenter } from '../../result-centers/domain/result-center.entity';
 export type ProductChangeHistoryTargetType = 'PRODUCT' | 'VARIANT';
 export type ProductChangeHistoryAction = 'CREATE' | 'UPDATE' | 'DELETE';
 export interface ProductChangeHistoryChange {

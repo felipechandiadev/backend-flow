@@ -1,6 +1,6 @@
 import "reflect-metadata";
-import { Company } from '@modules/companies/domain/company.entity';
-import { Branch } from '@modules/branches/domain/branch.entity';
+import { Company } from '../../companies/domain/company.entity';
+import { Branch } from '../../branches/domain/branch.entity';
 export declare enum ResultCenterType {
     DIRECT = "DIRECT",
     SUPPORT = "SUPPORT",

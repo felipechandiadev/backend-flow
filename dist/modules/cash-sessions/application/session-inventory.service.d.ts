@@ -1,8 +1,8 @@
 import { Repository, DataSource } from 'typeorm';
-import { StockLevel } from '@modules/stock-levels/domain/stock-level.entity';
-import { Product } from '@modules/products/domain/product.entity';
-import { ProductVariant } from '@modules/product-variants/domain/product-variant.entity';
-import { Storage } from '@modules/storages/domain/storage.entity';
+import { StockLevel } from '../../stock-levels/domain/stock-level.entity';
+import { Product } from '../../products/domain/product.entity';
+import { ProductVariant } from '../../product-variants/domain/product-variant.entity';
+import { Storage } from '../../storages/domain/storage.entity';
 export declare class SessionInventoryService {
     private readonly stockLevelRepository;
     private readonly productRepository;

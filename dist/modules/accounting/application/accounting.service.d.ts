@@ -1,6 +1,6 @@
 import { DataSource } from 'typeorm';
 import { BuildLedgerDto } from './dto/build-ledger.dto';
-import { AccountingAccount } from '@modules/accounting-accounts/domain/accounting-account.entity';
+import { AccountingAccount } from '../../accounting-accounts/domain/accounting-account.entity';
 export declare class AccountingService {
     private readonly dataSource;
     constructor(dataSource: DataSource);

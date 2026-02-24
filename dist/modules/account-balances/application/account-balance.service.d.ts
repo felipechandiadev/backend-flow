@@ -1,7 +1,7 @@
 import { Repository, DataSource } from 'typeorm';
 import { AccountBalance } from '../domain/account-balance.entity';
-import { LedgerEntry } from '@modules/ledger-entries/domain/ledger-entry.entity';
-import { AccountingPeriod } from '@modules/accounting-periods/domain/accounting-period.entity';
+import { LedgerEntry } from '../../ledger-entries/domain/ledger-entry.entity';
+import { AccountingPeriod } from '../../accounting-periods/domain/accounting-period.entity';
 export declare class AccountBalanceService {
     private readonly balanceRepository;
     private readonly ledgerRepository;

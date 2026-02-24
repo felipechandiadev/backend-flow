@@ -1,6 +1,6 @@
 import "reflect-metadata";
-import { Company } from '@modules/companies/domain/company.entity';
-import { Person } from '@modules/persons/domain/person.entity';
+import { Company } from '../../companies/domain/company.entity';
+import { Person } from '../../persons/domain/person.entity';
 export declare class Shareholder {
     id: string;
     companyId: string;

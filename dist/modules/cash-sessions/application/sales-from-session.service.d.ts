@@ -1,12 +1,12 @@
 import { Repository, DataSource } from 'typeorm';
-import { Transaction, TransactionType, TransactionStatus, PaymentMethod } from '@modules/transactions/domain/transaction.entity';
-import { TransactionLine } from '@modules/transaction-lines/domain/transaction-line.entity';
-import { CashSession } from '@modules/cash-sessions/domain/cash-session.entity';
-import { PointOfSale } from '@modules/points-of-sale/domain/point-of-sale.entity';
-import { User } from '@modules/users/domain/user.entity';
-import { ProductVariant } from '@modules/product-variants/domain/product-variant.entity';
+import { Transaction, TransactionType, TransactionStatus, PaymentMethod } from '../../transactions/domain/transaction.entity';
+import { TransactionLine } from '../../transaction-lines/domain/transaction-line.entity';
+import { CashSession } from '../../cash-sessions/domain/cash-session.entity';
+import { PointOfSale } from '../../points-of-sale/domain/point-of-sale.entity';
+import { User } from '../../users/domain/user.entity';
+import { ProductVariant } from '../../product-variants/domain/product-variant.entity';
 import { CreateSaleDto } from './dto/create-sale.dto';
-import { TransactionsService } from '@modules/transactions/application/transactions.service';
+import { TransactionsService } from '../../transactions/application/transactions.service';
 export declare class SalesFromSessionService {
     private readonly transactionRepository;
     private readonly transactionLineRepository;

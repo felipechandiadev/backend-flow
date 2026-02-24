@@ -1,4 +1,4 @@
-import { TransactionType, PaymentMethod, PaymentStatus } from '@modules/transactions/domain/transaction.entity';
+import { TransactionType, PaymentMethod, PaymentStatus } from '../../../transactions/domain/transaction.entity';
 export declare class CreateTransactionLineDto {
     productId?: string;
     productVariantId?: string;

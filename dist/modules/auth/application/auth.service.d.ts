@@ -1,5 +1,5 @@
 import { Repository } from 'typeorm';
-import { User } from '@modules/users/domain/user.entity';
+import { User } from '../../users/domain/user.entity';
 import { LoginDto } from './dto/login.dto';
 import { LoginResponseDto } from './dto/login-response.dto';
 export declare class AuthService {

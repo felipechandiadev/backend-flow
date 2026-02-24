@@ -1,10 +1,10 @@
 import { Repository } from 'typeorm';
-import { Installment, InstallmentStatus, InstallmentSourceType } from '@modules/installments/domain/installment.entity';
-import { InstallmentRepository } from '@modules/installments/infrastructure/installment.repository';
-import { PayInstallmentDto } from '@modules/installments/presentation/dto/pay-installment.dto';
-import { Transaction } from '@modules/transactions/domain/transaction.entity';
-import { PaymentMethod } from '@modules/transactions/domain/transaction.entity';
-import { TransactionsService } from '@modules/transactions/application/transactions.service';
+import { Installment, InstallmentStatus, InstallmentSourceType } from '../../../installments/domain/installment.entity';
+import { InstallmentRepository } from '../../../installments/infrastructure/installment.repository';
+import { PayInstallmentDto } from '../../../installments/presentation/dto/pay-installment.dto';
+import { Transaction } from '../../../transactions/domain/transaction.entity';
+import { PaymentMethod } from '../../../transactions/domain/transaction.entity';
+import { TransactionsService } from '../../../transactions/application/transactions.service';
 export declare class InstallmentService {
     private readonly repo;
     private readonly transactionsService;

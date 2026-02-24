@@ -1,7 +1,7 @@
 import { Repository } from 'typeorm';
-import { User } from '@modules/users/domain/user.entity';
-import { Branch } from '@modules/branches/domain/branch.entity';
-import { TransactionsService } from '@modules/transactions/application/transactions.service';
+import { User } from '../../users/domain/user.entity';
+import { Branch } from '../../branches/domain/branch.entity';
+import { TransactionsService } from '../../transactions/application/transactions.service';
 export declare class CapitalContributionsService {
     private readonly userRepository;
     private readonly branchRepository;

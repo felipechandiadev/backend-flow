@@ -1,9 +1,9 @@
 import "reflect-metadata";
-import { Company } from '@modules/companies/domain/company.entity';
-import { Person } from '@modules/persons/domain/person.entity';
-import { Branch } from '@modules/branches/domain/branch.entity';
-import { ResultCenter } from '@modules/result-centers/domain/result-center.entity';
-import { OrganizationalUnit } from '@modules/organizational-units/domain/organizational-unit.entity';
+import { Company } from '../../companies/domain/company.entity';
+import { Person } from '../../persons/domain/person.entity';
+import { Branch } from '../../branches/domain/branch.entity';
+import { ResultCenter } from '../../result-centers/domain/result-center.entity';
+import { OrganizationalUnit } from '../../organizational-units/domain/organizational-unit.entity';
 export declare enum EmploymentType {
     FULL_TIME = "FULL_TIME",
     PART_TIME = "PART_TIME",

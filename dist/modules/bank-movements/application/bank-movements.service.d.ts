@@ -1,6 +1,6 @@
 import { Repository } from 'typeorm';
-import { Company } from '@modules/companies/domain/company.entity';
-import { Transaction } from '@modules/transactions/domain/transaction.entity';
+import { Company } from '../../companies/domain/company.entity';
+import { Transaction } from '../../transactions/domain/transaction.entity';
 export declare class BankMovementsService {
     private readonly transactionRepository;
     private readonly companyRepository;

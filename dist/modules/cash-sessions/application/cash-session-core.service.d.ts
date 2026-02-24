@@ -1,11 +1,11 @@
 import { Repository, DataSource } from 'typeorm';
-import { CashSession, CashSessionStatus } from '@modules/cash-sessions/domain/cash-session.entity';
-import { PointOfSale } from '@modules/points-of-sale/domain/point-of-sale.entity';
-import { User } from '@modules/users/domain/user.entity';
+import { CashSession, CashSessionStatus } from '../../cash-sessions/domain/cash-session.entity';
+import { PointOfSale } from '../../points-of-sale/domain/point-of-sale.entity';
+import { User } from '../../users/domain/user.entity';
 import { OpenCashSessionDto } from './dto/open-cash-session.dto';
 import { GetCashSessionsDto } from './dto/get-cash-sessions.dto';
-import { TransactionsService } from '@modules/transactions/application/transactions.service';
-import { TransactionType, PaymentMethod } from '@modules/transactions/domain/transaction.entity';
+import { TransactionsService } from '../../transactions/application/transactions.service';
+import { TransactionType, PaymentMethod } from '../../transactions/domain/transaction.entity';
 export declare class CashSessionCoreService {
     private readonly cashSessionRepository;
     private readonly pointOfSaleRepository;
@@ -50,7 +50,7 @@ export declare class CashSessionCoreService {
             openedAt: Date;
             closedAt?: Date;
             notes?: string;
-            closingDetails?: import("@modules/cash-sessions/domain/cash-session.entity").CashSessionClosingDetails | null;
+            closingDetails?: import("../../cash-sessions/domain/cash-session.entity").CashSessionClosingDetails | null;
             createdAt: Date;
             updatedAt: Date;
             deletedAt?: Date;
@@ -96,7 +96,7 @@ export declare class CashSessionCoreService {
             openedAt: Date;
             closedAt?: Date;
             notes?: string;
-            closingDetails?: import("@modules/cash-sessions/domain/cash-session.entity").CashSessionClosingDetails | null;
+            closingDetails?: import("../../cash-sessions/domain/cash-session.entity").CashSessionClosingDetails | null;
             createdAt: Date;
             updatedAt: Date;
             deletedAt?: Date;
@@ -121,7 +121,7 @@ export declare class CashSessionCoreService {
             closedAt: Date | null;
             difference: number | null;
             notes: string | null;
-            closingDetails: import("@modules/cash-sessions/domain/cash-session.entity").CashSessionClosingDetails | null;
+            closingDetails: import("../../cash-sessions/domain/cash-session.entity").CashSessionClosingDetails | null;
             openedBy: {
                 id: string;
                 userName: string;

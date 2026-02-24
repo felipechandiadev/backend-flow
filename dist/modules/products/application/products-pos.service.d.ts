@@ -1,8 +1,8 @@
 import { Repository, DataSource } from 'typeorm';
-import { ProductVariant } from '@modules/product-variants/domain/product-variant.entity';
-import { Product } from '@modules/products/domain/product.entity';
-import { PriceListItem } from '@modules/price-list-items/domain/price-list-item.entity';
-import { StockLevel } from '@modules/stock-levels/domain/stock-level.entity';
+import { ProductVariant } from '../../product-variants/domain/product-variant.entity';
+import { Product } from '../../products/domain/product.entity';
+import { PriceListItem } from '../../price-list-items/domain/price-list-item.entity';
+import { StockLevel } from '../../stock-levels/domain/stock-level.entity';
 import { SearchPosProductsDto } from './dto/search-pos-products.dto';
 export type PosProductSearchResult = {
     productId: string;

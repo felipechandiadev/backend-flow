@@ -1,6 +1,6 @@
 import { Repository } from 'typeorm';
 import { User, UserRole } from '../domain/user.entity';
-import { Person, DocumentType, PersonType } from '@modules/persons/domain/person.entity';
+import { Person, DocumentType, PersonType } from '../../persons/domain/person.entity';
 export declare class UsersService {
     private readonly userRepository;
     private readonly personRepository;

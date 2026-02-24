@@ -1,5 +1,5 @@
 import { Repository } from 'typeorm';
-import { PointOfSale } from '@modules/points-of-sale/domain/point-of-sale.entity';
+import { PointOfSale } from '../../points-of-sale/domain/point-of-sale.entity';
 export declare class PosService {
     private posRepository;
     constructor(posRepository: Repository<PointOfSale>);

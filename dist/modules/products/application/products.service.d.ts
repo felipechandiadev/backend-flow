@@ -1,9 +1,9 @@
 import { Repository, DataSource } from 'typeorm';
-import { Product } from '@modules/products/domain/product.entity';
-import { ProductVariant } from '@modules/product-variants/domain/product-variant.entity';
-import { Tax } from '@modules/taxes/domain/tax.entity';
-import { Attribute } from '@modules/attributes/domain/attribute.entity';
-import { PriceListItem } from '@modules/price-list-items/domain/price-list-item.entity';
+import { Product } from '../../products/domain/product.entity';
+import { ProductVariant } from '../../product-variants/domain/product-variant.entity';
+import { Tax } from '../../taxes/domain/tax.entity';
+import { Attribute } from '../../attributes/domain/attribute.entity';
+import { PriceListItem } from '../../price-list-items/domain/price-list-item.entity';
 import { SearchProductsDto } from './dto/search-products.dto';
 export declare class ProductsService {
     private readonly productRepository;
@@ -22,7 +22,7 @@ export declare class ProductsService {
         name: string;
         description?: string;
         brand?: string;
-        productType: import("@modules/products/domain/product.entity").ProductType;
+        productType: import("../../products/domain/product.entity").ProductType;
         taxIds?: string[];
         imagePath?: string;
         isActive: boolean;
@@ -30,7 +30,7 @@ export declare class ProductsService {
         resultCenter?: import("../../result-centers/domain/result-center.entity").ResultCenter;
         baseUnitId?: string;
         metadata?: Record<string, any>;
-        changeHistory?: import("@modules/products/domain/product.entity").ProductChangeHistoryEntry[];
+        changeHistory?: import("../../products/domain/product.entity").ProductChangeHistoryEntry[];
         createdAt: Date;
         updatedAt: Date;
         deletedAt?: Date;

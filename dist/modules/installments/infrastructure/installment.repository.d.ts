@@ -1,5 +1,5 @@
 import { DataSource, Repository } from 'typeorm';
-import { Installment } from '@modules/installments/domain/installment.entity';
+import { Installment } from '../../installments/domain/installment.entity';
 export declare class InstallmentRepository extends Repository<Installment> {
     private dataSource;
     constructor(dataSource: DataSource);

@@ -95,7 +95,7 @@ const typeOrmConfig = (configService) => ({
     subscribers: [
         AuditSubscriber_1.AuditSubscriber,
     ],
-    synchronize: false,
+    synchronize: configService.get('DB_SYNCHRONIZE', 'false') === 'true',
     logging: configService.get('DB_LOGGING', 'false') === 'true',
     extra: {
         connectionLimit: 10,

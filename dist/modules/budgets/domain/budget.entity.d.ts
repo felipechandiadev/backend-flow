@@ -1,7 +1,7 @@
 import "reflect-metadata";
-import { Company } from '@modules/companies/domain/company.entity';
-import { ResultCenter } from '@modules/result-centers/domain/result-center.entity';
-import { User } from '@modules/users/domain/user.entity';
+import { Company } from '../../companies/domain/company.entity';
+import { ResultCenter } from '../../result-centers/domain/result-center.entity';
+import { User } from '../../users/domain/user.entity';
 export declare enum BudgetCurrency {
     CLP = "CLP"
 }

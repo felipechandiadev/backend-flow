@@ -1,7 +1,7 @@
 import "reflect-metadata";
-import { Transaction } from '@modules/transactions/domain/transaction.entity';
-import { AccountingAccount } from '@modules/accounting-accounts/domain/accounting-account.entity';
-import { Person } from '@modules/persons/domain/person.entity';
+import { Transaction } from '../../transactions/domain/transaction.entity';
+import { AccountingAccount } from '../../accounting-accounts/domain/accounting-account.entity';
+import { Person } from '../../persons/domain/person.entity';
 export declare class LedgerEntry {
     id: string;
     transactionId: string;

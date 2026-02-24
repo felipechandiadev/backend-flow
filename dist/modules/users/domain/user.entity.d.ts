@@ -1,5 +1,5 @@
 import "reflect-metadata";
-import { Person } from '@modules/persons/domain/person.entity';
+import { Person } from '../../persons/domain/person.entity';
 export declare enum UserRole {
     ADMIN = "ADMIN",
     OPERATOR = "OPERATOR"

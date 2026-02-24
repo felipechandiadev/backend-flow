@@ -1,5 +1,5 @@
 import { Repository } from 'typeorm';
-import { GoldPrice } from '@modules/gold-prices/domain/gold-price.entity';
+import { GoldPrice } from '../../modules/gold-prices/domain/gold-price.entity';
 export interface GoldPriceDTO {
     id?: string;
     date: string;

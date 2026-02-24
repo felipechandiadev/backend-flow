@@ -1,6 +1,6 @@
 import "reflect-metadata";
-import { Company } from '@modules/companies/domain/company.entity';
-import { ResultCenter } from '@modules/result-centers/domain/result-center.entity';
+import { Company } from '../../companies/domain/company.entity';
+import { ResultCenter } from '../../result-centers/domain/result-center.entity';
 export declare class ExpenseCategory {
     id: string;
     companyId: string;

@@ -1,7 +1,7 @@
 import { Repository, DataSource } from 'typeorm';
 import { StoragesService } from '../../storages/application/storages.service';
-import { TransactionsService } from '@modules/transactions/application/transactions.service';
-import { User } from '@modules/users/domain/user.entity';
+import { TransactionsService } from '../../transactions/application/transactions.service';
+import { User } from '../../users/domain/user.entity';
 export declare class InventoryService {
     private readonly storagesService;
     private readonly dataSource;

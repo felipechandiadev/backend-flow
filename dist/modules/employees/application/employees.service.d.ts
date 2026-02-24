@@ -1,6 +1,6 @@
 import { Repository } from 'typeorm';
 import { Employee, EmployeeStatus, EmploymentType } from '../domain/employee.entity';
-import { Company } from '@modules/companies/domain/company.entity';
+import { Company } from '../../companies/domain/company.entity';
 export declare class EmployeesService {
     private readonly employeeRepository;
     private readonly companyRepository;

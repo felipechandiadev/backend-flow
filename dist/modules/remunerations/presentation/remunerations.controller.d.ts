@@ -1,5 +1,5 @@
 import { RemunerationsService } from '../application/remunerations.service';
-import { TransactionStatus } from '@modules/transactions/domain/transaction.entity';
+import { TransactionStatus } from '../../transactions/domain/transaction.entity';
 export declare class RemunerationsController {
     private readonly remunerationsService;
     constructor(remunerationsService: RemunerationsService);

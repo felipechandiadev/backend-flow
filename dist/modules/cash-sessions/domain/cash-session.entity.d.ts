@@ -1,6 +1,6 @@
 import "reflect-metadata";
-import { PointOfSale } from '@modules/points-of-sale/domain/point-of-sale.entity';
-import { User } from '@modules/users/domain/user.entity';
+import { PointOfSale } from '../../points-of-sale/domain/point-of-sale.entity';
+import { User } from '../../users/domain/user.entity';
 export type CashSessionTenderBreakdown = {
     cash: number;
     debitCard: number;

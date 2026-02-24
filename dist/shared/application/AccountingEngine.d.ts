@@ -1,7 +1,7 @@
 import { DataSource, EntityManager } from 'typeorm';
-import { AccountingAccount, AccountType } from '@modules/accounting-accounts/domain/accounting-account.entity';
-import { RuleScope } from '@modules/accounting-rules/domain/accounting-rule.entity';
-import { Transaction } from '@modules/transactions/domain/transaction.entity';
+import { AccountingAccount, AccountType } from '../../modules/accounting-accounts/domain/accounting-account.entity';
+import { RuleScope } from '../../modules/accounting-rules/domain/accounting-rule.entity';
+import { Transaction } from '../../modules/transactions/domain/transaction.entity';
 export interface LedgerPosting {
     id: string;
     transactionId: string;

@@ -1,7 +1,7 @@
 import "reflect-metadata";
-import { PriceList } from '@modules/price-lists/domain/price-list.entity';
-import { Product } from '@modules/products/domain/product.entity';
-import { ProductVariant } from '@modules/product-variants/domain/product-variant.entity';
+import { PriceList } from '../../price-lists/domain/price-list.entity';
+import { Product } from '../../products/domain/product.entity';
+import { ProductVariant } from '../../product-variants/domain/product-variant.entity';
 export declare class PriceListItem {
     id: string;
     priceListId?: string;

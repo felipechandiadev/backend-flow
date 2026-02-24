@@ -1,7 +1,7 @@
 import { Repository } from 'typeorm';
-import { Customer } from '@modules/customers/domain/customer.entity';
-import { Person } from '@modules/persons/domain/person.entity';
-import { Transaction } from '@modules/transactions/domain/transaction.entity';
+import { Customer } from '../../customers/domain/customer.entity';
+import { Person } from '../../persons/domain/person.entity';
+import { Transaction } from '../../transactions/domain/transaction.entity';
 import { CreateCustomerDto } from './dto/create-customer.dto';
 import { SearchCustomersDto } from './dto/search-customers.dto';
 export declare class CustomersService {
@@ -15,7 +15,7 @@ export declare class CustomersService {
             customerId: string;
             personId: string;
             displayName: string;
-            documentType: import("@modules/persons/domain/person.entity").DocumentType | null;
+            documentType: import("../../persons/domain/person.entity").DocumentType | null;
             documentNumber: string | null;
             email: string | null;
             phone: string | null;
@@ -57,7 +57,7 @@ export declare class CustomersService {
         customerId: string;
         personId: string;
         displayName: string;
-        documentType: import("@modules/persons/domain/person.entity").DocumentType | null;
+        documentType: import("../../persons/domain/person.entity").DocumentType | null;
         documentNumber: string | null;
         email: string | null;
         phone: string | null;
@@ -115,7 +115,7 @@ export declare class CustomersService {
     getPurchases(customerId: string, status?: string): Promise<{
         id: string;
         documentNumber: any;
-        status: import("@modules/transactions/domain/transaction.entity").TransactionStatus;
+        status: import("../../transactions/domain/transaction.entity").TransactionStatus;
         total: number;
         createdAt: Date;
     }[]>;
