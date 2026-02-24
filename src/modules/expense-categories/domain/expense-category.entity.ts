@@ -44,7 +44,7 @@ export class ExpenseCategory {
     @Column({ type: "boolean", default: true })
     isActive!: boolean;
 
-    @Column({ type: "json", nullable: true, default: () => "'[]'" })
+    @Column({ type: "json", nullable: true })
     examples?: string[] | null;
 
     @Column({ type: "json", nullable: true })

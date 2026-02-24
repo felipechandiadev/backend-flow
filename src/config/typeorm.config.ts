@@ -104,7 +104,7 @@ export const typeOrmConfig = (
     AuditSubscriber,
   ],
 
-  synchronize: false,
+  synchronize: configService.get('DB_SYNCHRONIZE', 'false') === 'true',
   logging: configService.get('DB_LOGGING', 'false') === 'true',
 
   extra: {
